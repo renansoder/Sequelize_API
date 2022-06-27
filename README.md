@@ -19,7 +19,7 @@
 
 --> Depois de colocar itens no seed: npx sequelize-cli db:seed:all (roda all por que é o único)
 
---> Começa a criação de tabelas pelas que não usam FK. (Pessoas, depois Niveis, depois Turmas, depois Matriculas)
+--> Começar a criação de tabelas pelas que não usam FK. (Pessoas, depois Niveis, depois Turmas, depois Matriculas)
 --> As FK são feitas depois, mas antes de rodar o db:migrate. (associações são feitas nos models)
 --> Feitas as associações (hasMany e belongsTo) em models, é preciso referenciar em migrations as FK, fazendo references:{models:'', key:''}.
 --> Agora pode rodar as migrações. (npx sequelize-cli db:migrate)
